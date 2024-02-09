@@ -9,7 +9,7 @@ dotenv.config();
 app.use(express.json()); // takes care of all requests, so headers aren't needed on front-end
 
 const corspolicy = {
-  'origin': process.env.FRONTEND_URI,
+  'origin': 'http://localhost:3000'
 } // allow origin
 app.use(cors(corspolicy));
 
